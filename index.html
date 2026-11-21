@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El comercio fluvial formal e informal en la Orinoquía a través del río Meta, 1940 a 1980: estructura, dinámicas y desarrollo</title>
+<meta name="description" content="La navegación y el comercio del río Meta entre 1940 y 1980, a través del lente de Abel Rey, navegante y comerciante llanero de Puerto López.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&amp;family=Courier+Prime:ital,wght@0,400;0,700;1,400&amp;display=swap">
+<style>
+:root{--fondo:#EDF0E9;--tinta:#1B2623;--verde:#2B6970;--ocre:#A26B1C;--gris:#56635D;--azul:#14213D;--linea:#C6CDC1;--suave:#E1E6DC;--papel:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:'Courier Prime','Courier New',monospace;font-size:16px;line-height:1.62}
+img{max-width:100%;display:block}
+a{color:var(--verde)} a:hover{color:var(--tinta)}
+h1,h2,h3,h4{font-family:'Cutive Mono','Courier New',monospace;font-weight:400;letter-spacing:-.01em;text-wrap:balance;color:var(--tinta)}
+h1{color:var(--azul)}
+p{margin:0 0 1.05em}
+.envoltura{max-width:1080px;margin:0 auto;padding:0 24px}
+.texto{max-width:720px;margin:0 auto;padding:0 24px}
+.etiqueta{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.pc{color:var(--ocre);font-style:italic}
+
+/* barra */
+.barra{position:sticky;top:0;z-index:30;background:var(--fondo);border-bottom:1px solid var(--linea)}
+.barra nav{max-width:1180px;margin:0 auto;padding:0 20px;min-height:56px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 6px}
+.barra .marca{font-family:'Cutive Mono',monospace;font-size:16px;color:var(--tinta);text-decoration:none;margin-right:auto;padding:8px 0;cursor:pointer;background:none;border:0}
+.barra button.ir{font-family:'Courier Prime',monospace;font-size:12.5px;color:var(--gris);background:none;border:0;border-bottom:2px solid transparent;padding:6px 8px;cursor:pointer}
+.barra button.ir:hover{color:var(--tinta)}
+.barra button.ir.activo{color:var(--azul);border-bottom-color:var(--ocre)}
+
+/* paneles */
+.panel{display:none;animation:aparece .6s ease both}
+.panel.activo{display:block}
+@keyframes aparece{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.panel{animation:none}html{scroll-behavior:auto}}
+
+/* portada */
+.titulo-portada{padding:56px 24px 0;text-align:center;position:relative;z-index:2}
+.titulo-portada h1{font-size:46px;line-height:1.15;margin:10px 0 8px}
+.titulo-portada h1 span{color:#0B0F14;letter-spacing:.04em}
+.titulo-portada .periodo{font-family:'Courier Prime','Courier New',monospace;font-weight:500;font-size:17px;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin:0}
+.foto-portada{max-width:1080px;margin:18px auto 0;padding:0 24px;position:relative;z-index:1}
+.subtitulo{max-width:760px;margin:28px auto 48px;padding:0 24px;text-align:center}
+.subtitulo p{font-size:21px;line-height:1.5;color:#2B3A36;margin-bottom:10px}
+
+/* encabezado de sección tipo museo */
+.portico{position:relative;min-height:440px;display:flex;align-items:flex-end;color:#fff;background:var(--azul)}
+.portico img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portico::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,33,61,0) 30%,rgba(20,33,61,.82) 100%)}
+.portico .rotulo{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:0 24px 40px;width:100%}
+.portico .num{font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#E0B566}
+.portico h2{color:#fff;font-size:42px;line-height:1.1;margin:6px 0 10px;max-width:820px}
+.portico p{max-width:640px;font-size:17px;margin:0;color:#EDF0E9}
+.portico .credito{position:absolute;right:16px;bottom:10px;z-index:2;font-size:11px;color:#D8DDD4}
+.portico.liso{min-height:300px;background:var(--azul)}
+.portico.liso::after{display:none}
+
+.bloque{padding:48px 0}
+.bloque+.bloque{border-top:1px solid var(--linea)}
+h3.sub{font-size:34px;line-height:1.15;margin:0 0 18px}
+h4{font-size:20px;margin:28px 0 10px}
+
+/* figuras */
+figure{margin:28px auto}
+figure img{width:100%;height:auto;border:1px solid var(--linea);background:#fff}
+figcaption{margin-top:8px;font-size:12px;line-height:1.5;color:var(--gris)}
+.fig-ancha{max-width:1080px;padding:0 24px}
+.fig-media{max-width:820px;padding:0 24px}
+.fig-chica{max-width:560px;padding:0 24px}
+.par{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1080px;margin:28px auto;padding:0 24px}
+.par figure{margin:0;padding:0}
+.lado{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:44px;max-width:1080px;margin:0 auto;padding:0 24px;align-items:start}
+.lado figure{margin:0}
+
+/* pregunta y citas */
+.pregunta{background:var(--azul);color:#EDF0E9;padding:56px 24px;text-align:center}
+.pregunta p.q{font-family:'Cutive Mono',monospace;font-size:30px;line-height:1.3;max-width:860px;margin:0 auto 20px;color:#fff}
+.pregunta p{max-width:720px;margin:0 auto;font-size:16px;color:#D8DDD4}
+blockquote.destacada{max-width:780px;margin:40px auto;padding:4px 24px 4px 28px;border-left:5px solid var(--ocre);font-family:'Cutive Mono',monospace;font-size:24px;line-height:1.35;color:var(--azul)}
+blockquote.destacada footer{font-family:'Courier Prime',monospace;font-size:12px;color:var(--gris);margin-top:10px}
+
+/* tarjetas de secciones */
+.indice{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.tarjeta-sec{background:var(--papel);border:1px solid var(--linea);text-align:left;padding:0;cursor:pointer;font:inherit;color:inherit;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.tarjeta-sec:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(20,33,61,.12)}
+.tarjeta-sec img{height:150px;width:100%;object-fit:cover}
+.tarjeta-sec .t{padding:14px 16px 18px}
+.tarjeta-sec .n{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ocre)}
+.tarjeta-sec h4{margin:4px 0 6px;font-size:19px}
+.tarjeta-sec p{font-size:13px;margin:0;color:var(--gris)}
+.tarjeta-sec .sinfoto{height:150px;background:var(--azul);display:flex;align-items:center;justify-content:center;color:#E0B566;font-family:'Cutive Mono',monospace;font-size:40px}
+
+/* décadas (acordeón) */
+.decadas{max-width:820px;margin:0 auto;padding:0 24px}
+.decadas details{background:var(--papel);border:1px solid var(--linea);border-left:5px solid var(--verde);margin-bottom:14px}
+.decadas details[open]{border-left-color:var(--ocre)}
+.decadas summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:baseline;gap:16px}
+.decadas summary::-webkit-details-marker{display:none}
+.decadas summary .anio{font-family:'Cutive Mono',monospace;font-size:26px;color:var(--ocre);min-width:120px}
+.decadas summary .tit{font-family:'Cutive Mono',monospace;font-size:20px;color:var(--azul);flex:1}
+.decadas summary .mas{font-size:22px;color:var(--gris)}
+.decadas details[open] summary .mas{transform:rotate(45deg)}
+.decadas .cuerpo{padding:0 22px 14px}
+.decadas .escala{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--verde);margin:18px 0 6px;font-weight:700}
+.decadas figure{padding:0}
+
+/* fichas y tablas */
+.medios{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1080px;margin:32px auto;padding:0 24px}
+.medio{background:#fff;border:1px solid var(--linea);border-top:4px solid var(--verde)}
+.medio img{width:100%;height:140px;object-fit:cover;border:0}
+.medio .numg{font-family:'Cutive Mono',monospace;font-size:34px;color:var(--ocre);padding:18px 16px 0;height:140px;display:flex;align-items:center;background:var(--suave)}
+.medio h4{margin:12px 16px 4px;font-size:18px}
+.medio p{margin:0 16px 8px;font-size:13px}
+.medio .f{color:var(--gris);font-size:11px;margin-bottom:14px}
+
+.ficha{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);max-width:1080px;margin:36px auto;background:var(--azul);color:#EDF0E9}
+.ficha img{width:100%;height:100%;object-fit:cover;border:0}
+.ficha .d{padding:26px 28px}
+.ficha h4{color:#fff;font-size:24px;margin:0 0 16px}
+.ficha .fila{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.ficha .n{font-family:'Cutive Mono',monospace;font-size:30px;color:#E0B566;line-height:1.1}
+.ficha .l{font-size:12px;line-height:1.4;margin-top:4px}
+.ficha .f{font-size:11px;opacity:.8;margin:18px 0 0}
+
+.tabla{max-width:960px;margin:32px auto;padding:22px 26px;background:#fff;border:1px solid var(--linea);border-left:5px solid var(--ocre)}
+.tabla h4{margin:0 0 4px;font-size:22px}
+.tabla .sub{font-size:13px;color:var(--gris);margin:0 0 14px}
+.tabla table{width:100%;border-collapse:collapse;font-size:14px}
+.tabla th{text-align:left;color:var(--verde);border-bottom:2px solid var(--verde);padding:8px 8px;vertical-align:bottom}
+.tabla td{border-bottom:1px solid #E1E6DD;padding:8px 8px;vertical-align:top}
+.tabla td.t{font-weight:700;color:var(--ocre);white-space:nowrap}
+.tabla tr.abel td{background:#F4F1E8}
+.tabla th.fila{color:var(--azul);border-bottom:1px solid #E1E6DD;font-weight:700;width:150px}
+.tabla .pie{font-size:12px;color:var(--gris);margin:12px 0 0}
+.tabla-scroll{overflow-x:auto}
+
+.cifras{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;max-width:860px;margin:28px auto;padding:0 24px}
+.cifra{flex:1 1 240px;background:#fff;border:1px solid var(--linea);padding:20px 22px;text-align:center}
+.cifra b{display:block;font-family:'Cutive Mono',monospace;font-size:44px;font-weight:400;color:var(--ocre);line-height:1}
+.cifra span{font-size:13px;color:var(--gris)}
+
+.pueblos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;max-width:1080px;margin:28px auto;padding:0 24px}
+.pueblo{background:#fff;border:1px solid var(--linea)}
+.pueblo img{width:100%;height:170px;object-fit:cover;border:0}
+.pueblo .sinfoto{height:170px;background:var(--suave);display:flex;align-items:center;justify-content:center;font-family:'Cutive Mono',monospace;font-size:22px;color:var(--verde)}
+.pueblo .t{padding:14px 18px 6px}
+.pueblo h4{margin:0 0 8px;font-size:21px}
+.pueblo p{font-size:14px}
+
+.archivo{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto;padding:0 24px}
+.archivo figure{margin:0}
+.archivo img{height:260px;object-fit:cover}
+
+/* mapa */
+.mapa{border:1px solid var(--linea);background:var(--suave)}
+.mapa .lienzo{position:relative;line-height:0}
+.mapa .lienzo img{border:0}
+.hs{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;padding:0;border-radius:50%;cursor:pointer;border:2.5px solid var(--ocre);background:rgba(162,107,28,.35);box-shadow:0 0 0 2px rgba(255,255,255,.85);transition:transform .15s}
+.hs-base{width:24px;height:24px;margin:-12px 0 0 -12px}
+.hs-puerto{border-color:var(--verde);background:rgba(43,105,112,.15)}
+.hs-mercado{border-color:var(--tinta);background:rgba(27,38,35,.25)}
+.hs.on,.hs:hover,.hs:focus-visible{transform:scale(1.3);background:var(--ocre)}
+.hs-puerto.on,.hs-puerto:hover,.hs-puerto:focus-visible{background:var(--verde)}
+.hs-mercado.on,.hs-mercado:hover,.hs-mercado:focus-visible{background:var(--tinta)}
+.mapa .info{display:flex;flex-wrap:wrap;gap:12px 24px;padding:14px 16px;border-top:1px solid var(--linea)}
+.mapa .info .nota{flex:1 1 420px;min-width:0}
+.mapa .info b{font-family:'Cutive Mono',monospace;font-size:19px;font-weight:400}
+.mapa .leyenda{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--gris);align-content:flex-start}
+.mapa .leyenda i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle}
+
+/* navegación entre secciones */
+.siguiente{display:flex;justify-content:space-between;gap:16px;max-width:1080px;margin:0 auto;padding:40px 24px 72px;border-top:1px solid var(--linea)}
+.siguiente button{font-family:'Courier Prime',monospace;font-size:15px;background:none;border:1px solid var(--azul);color:var(--azul);padding:12px 18px;cursor:pointer}
+.siguiente button.prim{background:var(--azul);color:#fff}
+.siguiente button:hover{background:var(--ocre);border-color:var(--ocre);color:#fff}
+
+.biblio p{padding-left:2.2em;text-indent:-2.2em;font-size:14px;margin-bottom:.7em}
+
+@media (max-width:760px){
+  .titulo-portada h1{font-size:32px}
+  .portico h2{font-size:32px}
+  .portico{min-height:340px}
+  .par,.lado{grid-template-columns:1fr}
+  .ficha{grid-template-columns:1fr}
+  .ficha .fila{grid-template-columns:repeat(2,1fr)}
+  .archivo{grid-template-columns:1fr}
+  .pregunta p.q{font-size:22px}
+  .hs{width:14px;height:14px;margin:-7px 0 0 -7px}
+  .decadas summary{flex-wrap:wrap;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<header class="barra">
+<nav aria-label="Secciones">
+<button class="marca" data-ir="inicio">Río Meta 1940–1980</button>
+<button class="ir" data-ir="inicio">Inicio</button>
+<button class="ir" data-ir="rio">I. El río</button>
+<button class="ir" data-ir="historia">II. Historia</button>
+<button class="ir" data-ir="caminos">III. Caminos</button>
+<button class="ir" data-ir="pueblos">IV. Pueblos</button>
+<button class="ir" data-ir="navegacion">V. Navegación</button>
+<button class="ir" data-ir="conclusion">Conclusión</button>
+<button class="ir" data-ir="fuentes">Fuentes y datos</button>
+</nav>
+</header>
+
+<main>
+
+<!-- ============================== PORTADA ============================== -->
+<section class="panel" id="inicio">
+<div class="titulo-portada">
+<p class="etiqueta">Historia Económica de Colombia · Historia familiar</p>
+<h1>El comercio fluvial formal e informal<br>en la Orinoquía a través del<br><span>RÍO META</span>, 1940 a 1980</h1>
+<p class="periodo">Estructura, dinámicas y desarrollo</p>
+</div>
+<figure class="foto-portada">
+<img src="img/lancha-bandera.jpg" alt="Lancha de madera azul con techo rojo y bandera de Colombia amarrada en la orilla del río Meta">
+<figcaption>Lancha en el río Meta. Foto: Camilo Rey.</figcaption>
+</figure>
+<div class="subtitulo">
+<p>La navegación y el comercio del río Meta entre 1940 y 1980 a través del lente de Abel Rey, navegante y comerciante llanero.</p>
+<p class="etiqueta">Sarah Lucía Vivas · 2026-2</p>
+</div>
+
+<div class="bloque">
+<div class="lado">
+<figure>
+<img src="img/camilo-rey-abuela-rio.jpg" alt="Flor Alba Garzón de pie junto a una lancha techada en la orilla del río">
+<figcaption>Mi abuela, Flor Alba Garzón, en el río. Las entrevistas con ella son la fuente principal del trabajo. Foto: Camilo Rey.</figcaption>
+</figure>
+<div>
+<h3 class="sub">Abel y el río Meta</h3>
+<p>Abel Rey (1931–2022) fue navegante y comerciante informal en el río Meta durante toda su juventud y su vida adulta, con base en Puerto López. El oficio no venía de una tradición familiar, sino de la migración: sus padres y abuelos, liberales, habían sido desplazados por la violencia bipartidista hacia un corregimiento remoto cerca de Villavicencio. Allí, el 1 de mayo de 1935, su padre, también llamado Abel Rey, y Clemente Naranjo bautizaron el caserío como Puerto López, en honor al presidente liberal Alfonso López Pumarejo (Alcaldía de Puerto López, 2025).</p>
+
+</div>
+</div>
+<div class="lado" style="margin-top:36px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center">
+<div><p>En Puerto López, Abel dejó la primaria y empezó a navegar el Meta, llevando mercancía de los centros urbanos a las regiones más apartadas de la Orinoquía. Su comercio era informal y funcionaba de voz a voz, con los pueblos que visitaba y con conocidos que necesitaban transportar algo (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026). Nunca estuvo vinculado a la Compañía Nacional de Navegación (NAVENAL), la empresa estatal creada en 1944 (Ardila-Luna, 2022, p. 76).</p></div>
+<figure>
+<img src="img/casa-barrio-abel-rey.jpg" alt="Casa de bahareque de colonos fundadores en el barrio Abel Rey de Puerto López">
+<figcaption>Casa de bahareque de colonos fundadores, barrio Abel Rey, Puerto López. Foto: C. Ardila Luna, 2016 (Ardila Luna, 2018, p. 131, Imagen 21).</figcaption>
+</figure>
+</div>
+</div>
+
+<div class="texto">
+<p>Cada año, en vísperas de Año Nuevo, Abel se reunía en Villavicencio con comerciantes y dueños de caseríos y haciendas del Meta lejano. Compraba mercancía al por mayor y anotaba los encargos. En febrero cargaba el bote y zarpaba de Puerto López en un viaje de unos seis meses, hasta Orocué, La Hermosa, Guachiría, el Cravo Norte, el Cravo Sur y a veces Venezuela, entregando pedidos en caseríos, resguardos indígenas y haciendas. Siempre llevaba en el bote un ataúd y un vestido de novia, porque “sabía que alguien de por allá lejos iba a necesitar uno” (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026).</p>
+<p>Los viajes de Abel por el Río Meta llegaron a su fin en 1986. No fue una decisión repentina, Abel cada año trataba de llevar a sus hijos hombres a que aprendieran la vida en el río, pero desde alrededor de comienzos de los 80 decía que era más complicado, pues la guerrilla había empezado a pedirle “vacunas” por parar en los puertos y solían amenazarlo si no pagaba. Además, en 1986 falleció su hija menor, Nidia Rey, a los 14 años; este hecho lo hizo tomar la decisión de volver a casa del todo y no volver a navegar hasta su muerte en julio de 2022. (Flor Alba Garzón, comunicación personal, 4 de noviembre de 2026).</p>
+</div>
+
+<figure class="fig-chica">
+<img src="img/abel-cedula.jpg" alt="Foto de cédula antigua de Abel Rey pegada en un álbum">
+<figcaption>Abel Rey, foto de cédula. Archivo familiar.</figcaption>
+</figure>
+<figure class="fig-media">
+<img src="img/familia-bote.jpg" alt="Fotografía antigua de mujeres y una bebé sentadas dentro de un bote de madera techado en el río">
+<figcaption>Mi abuela, Flor Alba Garzón, con mis tías y mi mamá, bebé, en el bote de Abel. Archivo familiar.</figcaption>
+</figure>
+
+<div class="pregunta">
+<p class="q">¿Por qué, a mediados del siglo XX, un ataúd o un vestido de novia solo llegaba a un caserío del Meta si alguien lo traía por el río?</p>
+<p>Esta página web hace un recorrido para tratar de responder esa pregunta. La primera parte contextualiza cómo era Colombia en las décadas en que Abel navegó, cómo se pobló el Meta y cómo la violencia lo transformó, hasta llegar al río. La segunda recorre los pueblos navegantes, empezando por Puerto López. La tercera analiza la navegación misma: qué se comerciaba, quién lo hacía y cómo convivían el circuito formal del Estado, con NAVENAL, y el circuito informal de navegantes como Abel.</p>
+</div>
+
+<div class="bloque">
+<div class="envoltura"><p class="etiqueta" style="text-align:center;margin-bottom:22px">El recorrido · haga clic en cada parte</p></div>
+<div class="indice">
+<button class="tarjeta-sec" data-ir="rio"><img src="img/rio-meta-abierto.jpg" alt=""><div class="t"><span class="n">Parte I</span><h4>El río Meta</h4><p>El río que atraviesa la región, sus dos estaciones y el mapa del recorrido de Abel.</p></div></button>
+<button class="tarjeta-sec" data-ir="historia"><img src="img/lopez-pumarejo.jpg" alt=""><div class="t"><span class="n">Parte II</span><h4>40 años de historia colombiana y llanera</h4><p>Colombia y el Meta, década por década.</p></div></button>
+<button class="tarjeta-sec" data-ir="caminos"><img src="img/planchon-ganado.jpg" alt=""><div class="t"><span class="n">Parte III</span><h4>Un territorio fragmentado</h4><p>El río, la carretera y la apuesta del Estado con NAVENAL.</p></div></button>
+<button class="tarjeta-sec" data-ir="pueblos"><img src="img/bodega-flotante-puente.jpg" alt=""><div class="t"><span class="n">Parte IV</span><h4>Pueblos navegantes</h4><p>Cómo se pobló el Meta y cómo nació Puerto López.</p></div></button>
+<button class="tarjeta-sec" data-ir="navegacion"><img src="img/barco-rio-meta.jpg" alt=""><div class="t"><span class="n">Parte V</span><h4>Dos circuitos sobre el mismo río</h4><p>El comercio del Estado y el de navegantes como Abel.</p></div></button>
+<button class="tarjeta-sec" data-ir="conclusion"><img src="img/camilo-rey-rio-meta.jpg" alt=""><div class="t"><span class="n">Cierre</span><h4>Conclusiones</h4><p>Por qué el ataúd llegaba por el río.</p></div></button>
+</div>
+</div>
+<div class="siguiente"><span></span><button class="prim" data-ir="rio">Parte I · El río que atraviesa la región →</button></div>
+</section>
+
+<!-- ============================== I. EL RÍO ============================== -->
+<section class="panel" id="rio">
+<div class="portico">
+<img src="img/rio-meta-abierto.jpg" alt="El río Meta abierto bajo un cielo nublado">
+<div class="rotulo"><span class="num">Parte I</span><h2>El río Meta</h2><p>El río que atraviesa la región.</p></div>
+<span class="credito">El río Meta. Foto: Camilo Rey.</span>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<h3 class="sub">El río que atraviesa la región</h3>
+<p>El Meta nace en el piedemonte llanero. El Humadea y el Guayuriba se unen para formar el Metica, que pasa frente a Puerto López; río abajo, cerca de Cabuyaro, el Metica desemboca en el Humea y nace el Meta. Desde ahí corre hacia el nororiente hasta Puerto Carreño, en el Vichada, donde desemboca en el Orinoco (Ardila Luna, 2018, p. 24). Contando el Metica, recorre unos mil kilómetros. Su cuenca abarca cerca del 9% del territorio nacional, se reparte entre el Meta, el Casanare, Arauca y el Vichada, y comparte 200 kilómetros de frontera con Venezuela (p. 24).</p>
+</div>
+<figure class="fig-ancha">
+<img src="img/camilo-rey-casa-flotante.jpg" alt="Canoa flotante y botes en el río Metica">
+<figcaption>Canoa flotante y botes en el río Metica. Foto: Camilo Rey (2022).</figcaption>
+</figure>
+<div class="texto">
+<p>El flujo y la vida del comerciante en el Meta la determina un ciclo de dos estaciones. En invierno, de marzo a noviembre, las lluvias suben el nivel del río, inundan las sabanas y abren la temporada de navegación comercial. En verano, de diciembre a febrero, “las lagunas, caños, esteros y morichales disminuyen su tamaño” y el río toma una forma trenzada al correr el agua entre islas y bancos de arena (Ardila Luna, 2018, p. 24). El Río Meta es navegable 8 meses al año durante la época de lluvias y esto ha determinado las dinámicas de indígenas, llaneros y colonos históricamente; el uso de uno u otro puerto dependía de la estación y mes del año, “durante el invierno era posible llegar hasta Puerto López y cuando el nivel del agua bajaba llegaban hasta Cabuyaro donde pasaban embarcaciones más pequeñas” (Ardila Luna, 2018, p. 31). El calendario de Abel seguía ese ciclo. Compraba la mercancía y recogía los encargos en Villavicencio a fin de año y zarpaba en febrero, justo antes de que las lluvias subieran el río, para viajar unos seis meses con las aguas altas (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026).</p>
+</div>
+</div>
+
+<div class="bloque">
+<div class="envoltura">
+<h3 class="sub">Mapa interactivo: el río de Abel, de Puerto López a Puerto Carreño</h3>
+<p style="max-width:760px">El mapa muestra los puertos del Meta y las paradas del recorrido de Abel. Al tocar cada punto aparece su papel en el comercio del río: Villavicencio como mercado, Puerto López como base, y río abajo los pueblos y haciendas que Abel abastecía hasta la frontera con Venezuela.</p>
+<figure style="margin:20px 0 0">
+<div class="mapa">
+<div class="lienzo">
+<img src="img/mapa-puertos-ardila.jpg" alt="Mapa de puertos sobre el río Meta, de Villavicencio y Puerto López hasta Puerto Carreño">
+<button type="button" class="hs hs-mercado" style="left:9.49%;top:69.89%" data-name="Villavicencio" data-note="Centro urbano y mercado mayorista. Cada fin de año Abel compraba aquí la mercancía y anotaba los encargos (Flor Alba Garzón, 2026)." aria-label="Villavicencio"></button>
+<button type="button" class="hs hs-base" style="left:21.41%;top:72.46%" data-name="Puerto López" data-note="Puerto de zarpar de Abel Rey. Puerto sobre el río Metica, el punto navegable más alto y más cercano a Bogotá (Ardila Luna, 2018, p. 130)." aria-label="Puerto López"></button>
+<button type="button" class="hs hs-puerto" style="left:23.29%;top:66.99%" data-name="Cabuyaro" data-note="Antiguo Puerto Barrigón. Puerto de verano, cuando el agua no alcanzaba a Puerto López (Ardila Luna, 2018, p. 31)." aria-label="Cabuyaro"></button>
+<button type="button" class="hs hs-puerto" style="left:33.41%;top:67.15%" data-name="Puerto Gaitán" data-note="Hoy es el puerto de pasajeros del Meta. Por río, desde Puerto López, son entre 6 y 18 horas según la embarcación (Ardila Luna, 2018)." aria-label="Puerto Gaitán"></button>
+<button type="button" class="hs hs-parada" style="left:37.41%;top:47.18%" data-name="Río Cravo Sur" data-note="Afluente del Meta." aria-label="Río Cravo Sur"></button>
+<button type="button" class="hs hs-parada" style="left:42.43%;top:53.78%" data-name="Orocué" data-note="Parada del recorrido de Abel según Flor Alba Garzón. Puerto histórico del Casanare (Ardila Luna, 2018)." aria-label="Orocué"></button>
+<button type="button" class="hs hs-puerto" style="left:49.18%;top:44.77%" data-name="Santa Rosalía" data-note="Pueblo ribereño que todavía depende del río para el mercado (Ardila Luna, 2018)." aria-label="Santa Rosalía"></button>
+<button type="button" class="hs hs-parada" style="left:49.96%;top:5.31%" data-name="Río Cravo Norte" data-note="Parte del recorrido de Abel según testimonio de Flor Alba Garzón." aria-label="Río Cravo Norte"></button>
+<button type="button" class="hs hs-puerto" style="left:56.08%;top:34.30%" data-name="La Primavera" data-note="Pueblo ribereño del Vichada (Ardila Luna, 2018)." aria-label="La Primavera"></button>
+<button type="button" class="hs hs-puerto" style="left:69.57%;top:17.39%" data-name="Nueva Antioquia" data-note="Puesto de la Armada Nacional sobre el Meta, en la frontera con Venezuela (Ardila Luna, 2018, Mapa No. 2)." aria-label="Nueva Antioquia"></button>
+<button type="button" class="hs hs-parada" style="left:96.39%;top:14.65%" data-name="Puerto Carreño" data-note="Desembocadura del Meta en el Orinoco y frontera con Venezuela (Ardila Luna, 2018), lugar hasta donde a veces llegaba Abel." aria-label="Puerto Carreño"></button>
+</div>
+<div class="info">
+<div class="nota"><b id="mapa-nombre">Puerto López</b><br><span id="mapa-nota">Puerto de zarpar de Abel Rey. Puerto sobre el río Metica, el punto navegable más alto y más cercano a Bogotá (Ardila Luna, 2018, p. 130).</span></div>
+<div class="leyenda">
+<span><i style="background:#A26B1C"></i>Recorrido de Abel</span>
+<span><i style="border:2px solid #2B6970"></i>Otros puertos</span>
+<span><i style="background:#1B2623"></i>Mercado</span>
+</div>
+</div>
+</div>
+<figcaption>Mapa base: «Mapa No. 2. Puertos sobre el río Meta», elaborado en ArcGIS por Carolina Ardila y finalizado en Illustrator por Miguel Acosta (Ardila Luna, 2018, p. 29). Capa interactiva de elaboración propia, con las paradas según la entrevista a Flor Alba Garzón, desarrollada mediante Claude Code (2026).</figcaption>
+</figure>
+</div>
+</div>
+<div class="siguiente"><button data-ir="inicio">← Inicio</button><button class="prim" data-ir="historia">Parte II · 40 años de historia →</button></div>
+</section>
+
+<!-- ============================== II. HISTORIA ============================== -->
+<section class="panel" id="historia">
+<div class="portico liso">
+<div class="rotulo"><span class="num">Parte II</span><h2>40 años de historia colombiana y llanera</h2><p>Colombia y el Meta entre el nacimiento de Abel, en 1931, y el fin de sus viajes, en 1986.</p></div>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<p>Los viajes de mi abuelo atravesaron décadas que transformaron a Colombia. Entre su nacimiento en 1931 y el fin de sus viajes en 1986 el país: dejó atrás la economía cafetera abierta de los años veinte y construyó un Estado que intervenía en el comercio, el crédito y el transporte (Ocampo, 2023, p. 22); atravesó una ola de violencia política y vivió al ritmo del precio del café, que marcaba las bonanzas y las crisis (Caballero y Urrutia, 2005, p. 17). Los años en los que Abel navegó el Meta fueron más estables que décadas anteriores, pero aún así estuvieron definidos por los ciclos resultantes en las fluctuaciones del café (ver Figura 1). Los Llanos, mientras tanto, seguían siendo parte de los Territorios Nacionales - regiones apartadas, extensas y poco pobladas cuya política pública se regía bajo regímenes administrativos especiales - y representaban más de la mitad del país, con índices de población y productividad muy bajos (Jara Moreno, 2007, p. 38).</p>
+</div>
+<figure class="fig-media">
+<img src="img/graficos/ocampo-g11a-pib.png" alt="Gráfico de líneas del crecimiento anual del PIB de Colombia entre 1905 y 2022">
+<figcaption>Figura 1. Crecimiento del PIB de Colombia, 1905–2022 (porcentaje). Fuente: Ocampo (2023), Gráfico 1.1, panel A, p. 4.</figcaption>
+</figure>
+<div class="texto"><p class="etiqueta" style="text-align:center;margin-top:10px">Haga clic en cada década para abrirla</p></div>
+</div>
+
+<div class="decadas">
+
+<details>
+<summary><span class="anio">Antes de 1940</span><span class="tit">La prosperidad al debe y la crisis</span><span class="mas">+</span></summary>
+<div class="cuerpo">
+<p class="escala">Colombia</p>
+<p>En los años veinte, debido inicialmente al Tratado por la venta de Panamá, un gobierno colombiano tuvo acceso amplio al crédito externo y lo dedicó sobre todo a obras públicas y transporte. En 1928 López Pumarejo bautizó ese auge como la “prosperidad a debe” (Caballero y Urrutia, 2005, pp. 8–9). Con la Gran Depresión, no obstante, el acceso al crédito se debilitó y el gobierno tuvo que recurrir a recortes en la inversión, que llevaron incluso a la parálisis completa de obras públicas a comienzos de 1931 (Ocampo, 2023, p. 16). La economía se reactivó desde 1932, con un crecimiento especialmente rápido de la manufactura (p. 20), y la reforma tributaria de 1935 redujo la dependencia del gobierno de los impuestos de aduana, permitiéndole suavizar los choques en los ciclos del café (p. 21).</p>
+<figure class="fig-chica">
+<img src="img/lopez-pumarejo.jpg" alt="Fotografía histórica de Alfonso López Pumarejo hablando desde un balcón">
+<figcaption>Alfonso López Pumarejo. Fuente: <span class="pc">[fuente de la imagen por confirmar]</span>.</figcaption>
+</figure>
+<p class="escala">El Meta</p>
+<p>En el Meta, las leyes de colonización y baldíos de comienzos de siglo habían tenido poco alcance en los Llanos pues la inversión se dirigía sobre todo a las regiones centrales (Jara Moreno, 2007, p. 39). Además, la crisis derivada de la Gran Depresión golpeó fuertemente a la región: los auxilios nacionales a los Territorios Nacionales cayeron de 782.790 pesos en 1928 a 213.451 en 1933 (p. 41). El gobierno de López Pumarejo cambió el panorama, pues hizo del desarrollo de la Intendencia del Meta una de las piezas centrales de su política territorial (Jara Moreno, 2007, p. 39). En su mandato se fundó Puerto López, el 1 de mayo de 1935, por Abel Rey (padre) y Clemente Naranjo (Alcaldía de Puerto López, 2025), y en 1936 se abrió la carretera Bogotá–Villavicencio. En 1937 se inauguró también una flotilla postal con naves a motor en Puerto López (Esquivel Triana, 2002, p. 67).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="anio">1940s</span><span class="tit">La guerra y el Estado que interviene</span><span class="mas">+</span></summary>
+<div class="cuerpo">
+<p class="escala">Colombia</p>
+<p>En el país la Segunda Guerra Mundial abatió la exportación de café al generar el cierre de los mercados europeos del grano en 1940 y provocó una nueva recesión. El país salió de ella gracias al Acuerdo Interamericano de Café y a la renegociación de la deuda con Estados Unidos (Ocampo, 2023, p. 21). Ese año se creó el Fondo Nacional del Café, y con las importaciones racionadas por la guerra Colombia acumuló una cantidad histórica de reservas (p. 21). El Estado, además, empezó a asumir funciones nuevas: en 1940 nació el Instituto de Fomento Industrial (p. 22), y en 1944, en el segundo gobierno de López Pumarejo, la Compañía Nacional de Navegación, NAVENAL, creada para integrar por río las regiones de frontera (Ardila Luna, 2018, p. 109).</p>
+<p class="escala">El Meta</p>
+<p>El Meta también crecía, o mejor dicho, se construía. Los recursos fiscales de los Territorios Nacionales pasaron de 706.405 pesos en 1934 a 2.647.736 en 1943 (Jara Moreno, 2007, p. 42), y la colonización estatal pasó por la Caja Agraria en 1944 y por el Instituto de Parcelaciones en 1946 (Esquivel Triana, 2002, p. 68). La región era atractiva para los colonos liberales, muchos habían llegado desde la Guerra de los Mil Días como la familia de Abel (Ospina Ovalle, 2021, p. 57; Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026). El Meta era por tanto liberal y gaitanista: en 1947 la lista de Gaitán fue la más votada en San Martín y en corregimientos como Yacuana (Puerto López) y Cabuyaro (Jara Moreno, 2007, p. 43). No obstante, los corregimientos no podían elegir sus propias autoridades, y la Intendencia no tenía representantes propios en el Congreso (pp. 45, 48). En esa década también llegaron los primeros medios de transporte modernos: las aerolíneas que volaban a los Llanos desde 1945 y, en 1948, los primeros buques de NAVENAL en el Meta (Alvear Sanín, 2008, p. 258; Ardila Luna, 2018, p. 109).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="anio">1950s</span><span class="tit">La Violencia y el café</span><span class="mas">+</span></summary>
+<div class="cuerpo">
+<p class="escala">Colombia</p>
+<p>Según Mazzuca y Robinson (2006), la paz que se vivió en Colombia desde 1905 se debió a reglas electorales que repartían el poder entre los dos partidos y que abrieron cuatro décadas de estabilidad política (2006, pp. 4, 10). No obstante, ese arreglo se rompió con el asesinato de Gaitán el 9 de abril de 1948 (Ospina Ovalle, 2021, p. 37). En noviembre de 1949 se declaró el estado de sitio y se suspendió el Congreso. Después llegaron Rojas Pinilla, en 1953, y la Junta Militar, entre 1957 y 1958 (Caballero y Urrutia, 2005, p. 19). Mientras tanto, la economía seguía rigiéndose por las fluctuaciones del café: la libra llegó a 0,80 dólares en 1954, el país creció 6,5% anual entre 1953 y 1955 y la industria se expandió con la sustitución de importaciones (Caballero y Urrutia, 2005, p. 17; Caballero y Esguerra, 2023, p. 88). La reforma financiera de 1951 creó bancos estatales de fomento, entre ellos el Banco Ganadero, en 1956 (Ocampo, 2023, p. 22). Cuando el precio del café cayó en 1955 vino la crisis externa más fuerte del periodo, que terminó en la devaluación más grande de la historia colombiana (p. 26).</p>
+<figure>
+<img src="img/graficos/ocampo-g12a-terminos.png" alt="Gráfico de los términos de intercambio de Colombia entre 1880 y 2022, con un pico a mediados de los años cincuenta">
+<figcaption>Figura 2. Términos de intercambio de Colombia (1970 = 100). El pico de mediados de los años cincuenta refleja la bonanza cafetera; su caída, la crisis de 1955–1958. Fuente: Ocampo (2023), Gráfico 1.2, panel A, p. 6.</figcaption>
+</figure>
+<p class="escala">El Meta</p>
+<p>La época de la Violencia azotó a Puerto López desde el primer día: el 9 de abril de 1948 hubo allí levantamientos gaitanistas dirigidos por Eliseo Velásquez (Esquivel Triana, 2002, p. 72). Entre 1949 y 1953 los Llanos fueron escenario de las guerrillas liberales, en una región donde las distancias y la falta de vías dejaban al gobierno muy poca influencia (Ospina Ovalle, 2021, p. 153). Las guerrillas llegaron a proponer su propio orden territorial llamado las Leyes del Llano, cuyo orden político funcionaba a través de juntas de vereda elegidas entre los vecinos (Jara Moreno, 2007, p. 48). La guerra también llegó al río: desde 1952 la Armada instaló apostaderos en Puerto López, Orocué y Puerto Carreño (Esquivel Triana, 2002, p. 68). Pese a la guerra, la población del Meta creció más rápido que nunca después de 1951 y en 1955 Puerto López fue erigido municipio (Ardila Luna, 2018, p. 131).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="anio">1960s</span><span class="tit">El Frente Nacional y la ganadería</span><span class="mas">+</span></summary>
+<div class="cuerpo">
+<p class="escala">Colombia</p>
+<p>El Frente Nacional restableció el reparto del poder entre los partidos y terminó el periodo de la Violencia. La economía, no obstante, seguía atrapada en ciclos de “siga y pare”: se expandía cuando el café tenía un boom y se ajustaba cuando el precio caía (Ocampo, 2023, p. 22). Lleras Camargo aumentó el gasto público entre 1959 y 1961, y una nueva crisis obligó a devaluar a 9 pesos por dólar en 1962 (p. 27). El gobierno vigilaba que se cumplieran las inversiones de la Ley 26 de 1959 de fomento agrícola y ganadero, y el Banco de la República le prestaba para “la pacificación del país” (Caballero y Esguerra, 2023, p. 105). La estabilidad llegó con el Decreto-Ley 444 de 1967, que unificó los tipos de cambio y creó un régimen estable de promoción de exportaciones (Ocampo, 2023, p. 28).</p>
+<p class="escala">El Meta</p>
+<p>Terminado el mandato de Rojas Pinilla, el Meta obtuvo la categoría de departamento (Jara Moreno, 2007, p. 47). Para 1964 los Llanos tenían apenas el 1,5% de la población nacional (Esquivel Triana, 2002, p. 62), pero el Meta ya era el departamento más poblado de la región. Su economía seguía basada en la ganadería extensiva y la agricultura de subsistencia (p. 59), que era justo el sector que el Estado buscaba financiar con el Banco Ganadero y otras medidas de incentivos. En esa década aumentó el transporte de ganado por el río Meta hasta Puerto López, desde donde seguía en camión hacia Bogotá (Ardila Luna, 2018, p. 47).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="anio">1970s</span><span class="tit">Crecimiento, bonanza y los Llanos como una nueva frontera</span><span class="mas">+</span></summary>
+<div class="cuerpo">
+<p class="escala">Colombia</p>
+<p>Las medidas del Decreto 444 pusieron fin a las crisis recurrentes de balanza de pagos e iniciaron uno de los periodos de crecimiento más dinámicos de la historia del país (Ocampo, 2023, p. 28). Las exportaciones no tradicionales pasaron del 15% del total en 1966 a más del 40% en 1974, y desde comienzos de la década Colombia volvió a tener acceso al crédito privado externo (p. 28). A mediados de 1975 empezó una nueva bonanza cafetera que fue controlada con política contracíclica por el gobierno de López Michelsen que implementó un ajuste fiscal y controles para controlar el exceso de divisas (p. 29). Desde 1978, el gobierno de Turbay Ayala cambió las medidas e implementó un plan masivo de inversión pública financiado con crédito externo (p. 29).</p>
+<p class="escala">El Meta</p>
+<p>En los setenta los Llanos se convirtieron en una nueva frontera económica. Se hallaron importantes yacimientos de petróleo y la investigación científica empezó a mostrar que los suelos podrían producir cantidades a escala industrial (Ardila Luna, 2018, p. 57). Con las exploraciones petroleras y el auge de la coca empezó una nueva ola de colonización (p. 39). Hubo también intentos de cultivos comerciales, como la caña de azúcar y el algodón, que en algunos casos se perdieron por las sequías (p. 140). En la misma década el BID financió la ampliación de la carretera Villavicencio–Puerto López (Alvear Sanín, 2008, p. 399).</p>
+</div>
+</details>
+
+<details>
+<summary><span class="anio">1980s</span><span class="tit">Crisis de la deuda y un Llano en disputa</span><span class="mas">+</span></summary>
+<div class="cuerpo">
+<p class="escala">Colombia</p>
+<p>El auge de gasto y crédito externo de Turbay coincidió con una caída de los precios internacionales, y la economía se desaceleró hasta crecer apenas 1,1% en 1982 (Ocampo, 2023, p. 31). El gobierno de Belisario Betancur heredó una economía casi paralizada, con altos déficits fiscal y externo, una crisis financiera que estalló en 1982 y el comienzo de la crisis latinoamericana de la deuda (p. 31).</p>
+<p class="escala">El Meta</p>
+<p>En 1985 el Ministerio de Obras Públicas encargó un proyecto para recuperar la navegabilidad del Meta (Ardila Luna, 2018, p. 57). Al mismo tiempo, el Llano se volvió territorio en disputa. Con el auge de la coca llegaron narcotraficantes que se apropiaron de grandes extensiones de tierra en pueblos ribereños como Santa Rosalía (p. 46), y la guerrilla empezó a cobrar “vacunas” a quienes transportaban mercancías por el río (p. 50). En medio de esa crisis se cerraron los dos circuitos del río. NAVENAL, que había decidido liquidarse en 1982, fue liquidada en 1984 (pp. 109, 155), y muchos comerciantes informales abandonaron sus botes, como Abel quien dejó de navegar en 1986.</p>
+</div>
+</details>
+
+</div>
+<div class="siguiente" style="margin-top:40px"><button data-ir="rio">← Parte I</button><button class="prim" data-ir="caminos">Parte III · Un territorio fragmentado →</button></div>
+</section>
+
+<!-- ============================== III. CAMINOS ============================== -->
+<section class="panel" id="caminos">
+<div class="portico">
+<img src="img/planchon-ganado.jpg" alt="Planchón amarillo con barandas en el río Meta">
+<div class="rotulo"><span class="num">Parte III</span><h2>El Meta: un territorio fragmentado</h2><p>El río, la carretera y la apuesta del Estado.</p></div>
+<span class="credito">Planchón en el río Meta. Foto: Camilo Rey.</span>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<p>El comercio fluvial a través del Río Meta respondía a la baja conexión de comunidades llaneras que necesitaban suplir sus necesidades. Esta fragmentación geográfica fue un proceso que empezó desde la Colonia, donde regiones de Colombia permanecieron aisladas entre sí por la geografía y debilidad de las comunicaciones, lo cual delimitó las dinámicas económicas interregionales al encarecer los bienes gracias a los altos costos de transporte (Safford y Palacios, 2002, p. 39). Los Llanos quedaron del otro lado de la cordillera Oriental, más cerca de Venezuela que de Bogotá: desde Arauca se llegaba a Ciudad Bolívar en doce días por río, y a Bogotá en treinta (Esquivel Triana, 2002, p. 72). Ese aislamiento impedía que la región llanera se integrara a la economía nacional (p. 69). No obstante, cada nuevo medio de transporte abarató el viaje, acercó el Meta al resto del país y cambió las dinámicas de abastecimiento dentro y fuera del río.</p>
+</div>
+
+<div class="medios">
+<div class="medio"><div class="numg">40 días</div><h4>A pie y en planchón</h4><p>El llanero arreaba el ganado de Arauca a Villavicencio; para cruzar los ríos lo pasaba en planchones.</p><p class="f">Esquivel Triana (2002, pp. 63, 67)</p></div>
+<div class="medio"><img src="img/vapor-meta-1920.jpg" alt="Vapor Meta hacia 1920"><h4>Río · 1937 y 1948</h4><p>Flotilla a motor en Puerto López (1937). NAVENAL llega al Meta (1948).</p><p class="f">Esquivel Triana (2002, p. 67); Ardila Luna (2018, p. 142)</p></div>
+<div class="medio"><img src="img/transicion-buenavista.jpg" alt="Bus y mulas en la carretera Bogotá–Villavicencio"><h4>Carretera · 1936</h4><p>Bogotá–Villavicencio: de 8 días a unas 4 horas y media.</p><p class="f">Esquivel Triana (2002, p. 67)</p></div>
+<div class="medio"><div class="numg">45 min</div><h4>Avión · 1949</h4><p>De Bogotá a Apiay en los DC-3 de Avianca.</p><p class="f">Esquivel Triana (2002, p. 68)</p></div>
+</div>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<h3 class="sub">El río, la carretera y la apuesta del Estado</h3>
+<p>Antes de 1944, el comercio del Llano pasaba por el río en botes de particulares, con trayectos cortos y limitados. Durante los primeros años de Abel como navegante su comercio incluía llevarle arroz a los caseríos y otros granos secos; además de bienes como ropa, medicina y otros consumibles que las comunidades no pudieran suplir por si solas (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026).</p>
+<p>En 1944, el panorama cambió: el Estado decidió hacerse cargo de la navegación. López Pumarejo creó la Compañía Nacional de Navegación, NAVENAL, con el objetivo de “fomentar y regular la navegación fluvial” para ayudar a la colonización e incorporar al territorio nacional las regiones de frontera (Ardila Luna, 2018, pp. 109, 142). La NAVENAL llegó al Meta en 1948 con un vapor traído del Magdalena y armado en Puerto López, y con él empezó lo que Ardila llama “la época dorada de la navegación” (Ardila Luna, 2018, pp. 31, 142). Llegó a tener ocho embarcaciones y llevaba ganado, pasajeros y sal para los ganaderos, en un convenio con el IDEMA (p. 109). Durante esa época, Abel mantuvo principalmente su comercio con caseríos y pequeñas haciendas a las cuales la NAVENAL no suplía (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026).</p>
+</div>
+
+<div class="ficha">
+<img src="img/convoy-meta.jpg" alt="Convoy en el río Meta">
+<div class="d"><h4>NAVENAL en el Meta</h4>
+<div class="fila">
+<div><div class="n">1944</div><div class="l">Creación, en el segundo gobierno de López Pumarejo</div></div>
+<div><div class="n">1948</div><div class="l">Llega al Meta con un vapor armado en Puerto López</div></div>
+<div><div class="n">8</div><div class="l">Embarcaciones: un buque y 7 convoyes</div></div>
+<div><div class="n">1982</div><div class="l">Pierde más del 50% de su patrimonio</div></div>
+<div><div class="n">1984</div><div class="l">Liquidación</div></div>
+</div>
+<p class="f">Fuente: elaboración propia con datos de Ardila Luna (2018, pp. 109, 142, 155).</p></div>
+</div>
+
+<div class="texto">
+<p>Mientras el Estado apostaba por el río en el Meta, el resto del país se pasaba a la carretera. Entre 1932 y 1948 la red nacional casi se cuadruplicó, de 3.006 a 11.607 kilómetros, aunque en 1947 los ríos todavía movían más de una cuarta parte de la carga del país (Alvear Sanín, 2008, tablas 35 y 38). La carretera Bogotá–Villavicencio, abierta en 1936, redujo el viaje de ocho días a unas cuatro horas y media (Esquivel Triana, 2002, p. 67), pero no pasaba del piedemonte. En 1944, ir de Villavicencio a Puerto López tomaba tres horas en verano y hasta doce en lluvias (p. 67), y en 1960 el Meta tenía apenas el 0,8% de los vehículos del país (Alvear Sanín, 2008, Tabla 40).</p>
+</div>
+
+<figure class="fig-media">
+<img src="img/transicion-buenavista.jpg" alt="Bus y mulas en una carretera de montaña">
+<figcaption>Apertura de la carretera Bogotá–Villavicencio (1936). Sector de Buenavista. Foto: Horst Martin.</figcaption>
+</figure>
+
+<div class="par">
+<figure><img src="img/graficos/carreteras.png" alt="Gráfico de los kilómetros de carreteras nacionales entre 1932 y 1948"><figcaption>Progresión de los km de carreteras nacionales (1932–1948). De 3.006 km en 1932 a 11.607 en 1948. La línea vertical marca la apertura de la carretera Bogotá–Villavicencio (1936). Fuente: Gráfico de elaboración propia. Datos: Alvear Sanín (2008), Tabla 35.</figcaption></figure>
+<figure><img src="img/graficos/carga_modos_1947.png" alt="Gráfico de la carga por modo de transporte en 1947"><figcaption>Carga por modo de transporte, 1947 (% de ton-km). Las vías fluviales movían el 28,5% de la carga, la mayor parte por el Magdalena. Fuente: Gráfico de elaboración propia. Datos: Alvear Sanín (2008), Tabla 38, con base en la misión Currie.</figcaption></figure>
+</div>
+<figure class="fig-media">
+<img src="img/graficos/parque_automotor_1960.png" alt="Gráfico de vehículos automotores por departamento en 1960">
+<figcaption>Vehículos automotores por departamento (1960). El Meta tenía 1.429 de los 181.918 vehículos del país (0,8%). Fuente: Gráfico de elaboración propia. Datos: Alvear Sanín (2008), Tabla 40, con base en el Anuario General de Estadística de 1960.</figcaption>
+</figure>
+
+<div class="tabla">
+<h4>Tiempos de viaje en los Llanos</h4>
+<p class="sub">Cuánto tomaba moverse por el Meta y hacia el centro del país, según el medio de transporte.</p>
+<div class="tabla-scroll"><table>
+<thead><tr><th>Trayecto</th><th>Medio</th><th>Tiempo</th><th>Año</th></tr></thead>
+<tbody>
+<tr><td>Arauca → Villavicencio</td><td>Ganado arreado a pie</td><td class="t">40 días</td><td>1ª mitad s. XX</td></tr>
+<tr><td>Arauca → Bogotá</td><td>—</td><td class="t">30 días</td><td>1ª mitad s. XX</td></tr>
+<tr><td>Arauca → Ciudad Bolívar (Venezuela)</td><td>Río</td><td class="t">12 días</td><td>1ª mitad s. XX</td></tr>
+<tr><td>Bogotá → Villavicencio</td><td>Camino, antes de la carretera</td><td class="t">8 días</td><td>Antes de 1936</td></tr>
+<tr><td>Bogotá → Villavicencio</td><td>Carretera</td><td class="t">4 h 35 min</td><td>1936–1937</td></tr>
+<tr><td>Bogotá → Villavicencio</td><td>Carretera</td><td class="t">6 horas</td><td>1949</td></tr>
+<tr><td>Villavicencio → Puerto López</td><td>Carretera</td><td class="t">3 h verano<br>12 h lluvias</td><td>1944</td></tr>
+<tr><td>Bogotá → Apiay (Villavicencio)</td><td>Avión DC-3</td><td class="t">45 minutos</td><td>1949</td></tr>
+<tr class="abel"><td>Puerto López → Orocué, Cravo Norte y más allá</td><td>Bote de Abel Rey</td><td class="t">≈ 6 meses*</td><td>1950–1980</td></tr>
+</tbody></table></div>
+<p class="pie">Fuente: Tabla de elaboración propia. Datos: Esquivel Triana (2002, pp. 63, 67, 68, 72) y Flor Alba Garzón (comunicación personal, 20 de septiembre de 2026). *Recorrido completo con entregas en cada parada, no un trayecto directo. Las cifras provienen de fuentes de distintos años y se presentan como órdenes de magnitud.</p>
+</div>
+
+<div class="texto">
+<p>En los años sesenta el río y la carretera empezaron a encontrarse. El ganado bajaba por el río hasta Puerto López, engordaba unas semanas y seguía en camión hacia Bogotá (Ardila Luna, 2018, p. 47). En 1968 se construyó el puente Carlos Lleras sobre el Metica (p. 144), y en los setenta el BID financió la ampliación de la carretera hasta Puerto López (Alvear Sanín, 2008, p. 399). Abel, siguió haciendo el viaje, pero las mercancías que empezaban a llegar por tierra acortaron sus recorridos y cambiaron lo que le pedían en los caseríos (Flor Alba Garzón, comunicación personal, 4 de noviembre de 2026).</p>
+</div>
+<figure class="fig-ancha">
+<img src="img/puente-carlos-lleras.jpg" alt="Puente amarillo sobre el río y una embarcación verde amarrada en la orilla">
+<figcaption>Puente <span class="pc">[¿Carlos Lleras?]</span> sobre el río en Puerto López. Foto: Camilo Rey.</figcaption>
+</figure>
+<div class="texto">
+<p>La guerra, sin embargo, también llegó al río. Primero, en los cincuenta, con las guerrillas en las orillas y las lanchas blindadas de la Armada (Esquivel Triana, 2002, p. 68); después, con las “vacunas” que cobraba la guerrilla a los transportadores (Ardila Luna, 2018, p. 50). Las tarifas subsidiadas tampoco se sostuvieron. Durante esa época, Abel trató de perseverar pero hubo varios años en los que la situación se ponía tan tensa en el río que optaba por ir periodos más cortos de tiempo o incluso saltarse una temporada y “sostenerse con lo ahorrado” (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026).</p>
+<p>En 1982 la junta directiva decidió liquidar la empresa por haber perdido más de la mitad de su patrimonio, y en 1984 NAVENAL desapareció (Ardila Luna, 2018, pp. 109, 155). Su propósito de integrar el territorio sobrevivió en el papel: el decreto que ese mismo año reorganizó la navegación estatal seguía hablando de apoyar la colonización y el comercio. Pero el Estado que podía financiarlo ya no existía.</p>
+<p>Al final, la integración que el Estado buscó por el río llegó por tierra. Cuando los pueblos empezaron a recibir por carretera lo que antes solo llegaba en bote, el navegante que llevaba de todo dejó de ser indispensable. Además, la violencia en las aguas no cesó y dos años después de la liquidación de NAVENAL, en 1986, Abel dejó de navegar.</p>
+</div>
+</div>
+<div class="siguiente"><button data-ir="historia">← Parte II</button><button class="prim" data-ir="pueblos">Parte IV · Pueblos navegantes →</button></div>
+</section>
+
+<!-- ============================== IV. PUEBLOS ============================== -->
+<section class="panel" id="pueblos">
+<div class="portico">
+<img src="img/bodega-flotante-puente.jpg" alt="Bodega flotante roja bajo un puente amarillo en el río">
+<div class="rotulo"><span class="num">Parte IV</span><h2>Pueblos navegantes y poblamiento del Meta</h2><p>Un territorio que se llenó de colonos.</p></div>
+<span class="credito">Bodega flotante en Puerto López. Foto: Camilo Rey.</span>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<p>El Meta se pobló en oleadas. La primera bajó en las décadas de 1910 y 1920 desde Cáqueza y Quetame, en la cordillera, y abrió en el piedemonte los primeros cultivos de arroz. La segunda llegó con la carretera a Villavicencio en 1936. La tercera la trajo la Violencia, con colonos del Tolima y del Viejo Caldas que fueron desmontando tierras hacia San Martín, Granada y las orillas del río cerca de Puerto López (Esquivel Triana, 2002, p. 65). Llegaron también liberales perseguidos, muchos desde la Guerra de los Mil Días, como la familia de Abel (Ospina Ovalle, 2021, p. 57). El Meta pasó de 51.674 habitantes en 1938 a 165.530 en 1964. (Censos de Población de 1938, 1951 y 1964).</p>
+</div>
+<figure class="fig-media">
+<img src="img/graficos/poblacion_censos.png" alt="Gráfico de barras de la población del Meta, Villavicencio y Puerto López en los censos de 1938, 1951, 1964 y 1985">
+<figcaption>Población según los censos, 1938–1985. La población del Meta se multiplicó por 3,2 entre 1938 y 1964 y casi se triplicó entre 1964 y 1985. En 1938 y 1951 Puerto López no figuraba como municipio; en 1985 ya no incluye a Puerto Gaitán, separado en 1969. Fuente: Gráfico de elaboración propia. Datos: Censos de Población de 1938, 1951 y 1964 (Resumen del Meta) y Censo de 1985 con ajuste de cobertura (DANE).</figcaption>
+</figure>
+<figure class="fig-media">
+<img src="img/graficos/crecimiento_1964_1985.png" alt="Gráfico de barras del crecimiento anual de la población entre 1964 y 1985: Villavicencio 5,7%, Meta 5,1%, Puerto López con Puerto Gaitán 2,4% y Puerto López 0,9%">
+<figcaption>Crecimiento promedio anual de la población, 1964–1985 (%). Mientras el Meta crecía 5,1% al año, Puerto López creció 0,9%, y 2,4% si se suma Puerto Gaitán, que en 1964 hacía parte de su territorio. Su peso en la población del departamento pasó del 10,9% al 4,6%. Fuente: Gráfico de elaboración propia. Datos: Censo de 1964 (Cuadros 1 y 5) y Censo de 1985 con ajuste de cobertura (DANE, p. 58).</figcaption>
+</figure>
+<div class="cifras">
+<div class="cifra"><b>2,1%</b><span>Crecimiento promedio anual de la población del Meta, 1938–1951</span></div>
+<div class="cifra"><b>7,0%</b><span>Crecimiento promedio anual de la población del Meta, 1951–1964</span></div>
+</div>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<h3 class="sub">Puerto López</h3>
+<p>Puerto López se fundó donde el caño Banderas cae al Metica. Era el punto navegable más alto del río y el más cercano a Bogotá (Ardila Luna, 2018, p. 130). Hacia 1938 era un pueblo de hombres: unos 800, frente a 50 mujeres, en unas 50 casas. En 1944 ya tenía 100 casas, y desde allí se enviaban a Villavicencio y Bogotá unas 100.000 arrobas de arroz, además de plátano y yuca (Esquivel Triana, 2002, p. 65). Sus colonos fundadores empezaron cuidando ganado y cultivando conucos, pero pronto los hombres se volcaron a la navegación y la pesca. La mayoría de sus casas de bahareque eran bodegas y tiendas del comercio por el río (Ardila Luna, 2018, p. 131). En 1964 Puerto López ya era el segundo municipio del Meta, con 18.054 habitantes. (Censo de Población de 1964).</p>
+</div>
+
+<div class="tabla">
+<h4>Puerto López en cifras, 1938–1985</h4>
+<div class="tabla-scroll"><table>
+<thead><tr><th>Año</th><th>Dato</th><th>Fuente</th></tr></thead>
+<tbody>
+<tr><td class="t">1938</td><td>Unos 800 hombres, 50 mujeres y 50 casas</td><td>Esquivel Triana (2002, p. 65)</td></tr>
+<tr><td class="t">1944</td><td>100 casas; 800 habitantes urbanos y 400 rurales</td><td>Esquivel Triana (2002, p. 65)</td></tr>
+<tr><td class="t">1944</td><td>Envía 100.000 arrobas de arroz a Villavicencio y Bogotá</td><td>Esquivel Triana (2002, p. 65)</td></tr>
+<tr><td class="t">1955</td><td>Se erige como municipio</td><td>Ardila Luna (2018, p. 131)</td></tr>
+<tr><td class="t">1964</td><td>18.054 habitantes; segundo municipio del Meta</td><td>Censo de 1964, Cuadro 5</td></tr>
+<tr><td class="t">1964</td><td>80% vive en el área rural</td><td>Censo de 1964, Cuadro 5</td></tr>
+<tr><td class="t">1964</td><td>123 hombres por cada 100 mujeres</td><td>Censo de 1964, Cuadro 5</td></tr>
+<tr><td class="t">1969</td><td>Puerto Gaitán, hasta entonces inspección de Puerto López, se erige como municipio</td><td>Asamblea del Meta, 29 de noviembre de 1969</td></tr>
+<tr><td class="t">1985</td><td>21.786 habitantes; pasa del 10,9% al 4,6% de la población del Meta</td><td>Censo de 1985 con ajuste de cobertura, p. 58</td></tr>
+<tr><td class="t">1964–1985</td><td>Crece 0,9% anual (2,4% sumando Puerto Gaitán), frente a 5,1% del Meta y 5,7% de Villavicencio</td><td>Cálculo propio con los censos de 1964 y 1985</td></tr>
+</tbody></table></div>
+<p class="pie">Fuente: Tabla de elaboración propia.</p>
+</div>
+
+<div class="par">
+<figure><img src="img/graficos/municipios_1964.png" alt="Gráfico de barras de la población de los municipios del Meta en 1964, por cabecera y resto"><figcaption>Municipios del Meta en 1964, cabecera y resto. Fuente: elaboración propia con el XIII Censo de Población 1964, Resumen del Meta, Cuadro 5. La suma de municipios coincide con el total departamental (165.530).</figcaption></figure>
+<figure><img src="img/graficos/piramide_puerto_lopez.png" alt="Pirámide poblacional de Puerto López en 1964"><figcaption>Puerto López en 1964: hombres y mujeres por edad. Hay 123 hombres por cada 100 mujeres (Meta: 119; Villavicencio: 107); en los grupos de 35–44 y 50–54 años supera los 150. Fuente: elaboración propia con el Censo de 1964, Cuadro 5, p. 28.</figcaption></figure>
+</div>
+<div class="par">
+<figure><img src="img/puerto-banderas.jpg" alt="Puerto Banderas en Puerto López"><figcaption>Puerto Banderas, Puerto López (Ardila Luna, 2018, p. 124, Imagen 20).</figcaption></figure>
+<figure><img src="img/botemotores-puerto-lopez.jpg" alt="Botemotores en el puerto de Puerto López"><figcaption>Botemotores en el puerto del Puente Carlos Lleras, Puerto López (Ardila Luna, 2018, p. 141, Imagen 23).</figcaption></figure>
+</div>
+<div class="texto">
+<p>El río que hizo a Puerto López también empezó a irse. En 1975, El Tiempo publicó un artículo titulado “¡Puerto López se está quedando sin río!”. La sedimentación, visible desde 1969, había alejado el cauce del pueblo (Ardila Luna, 2018, p. 135), y el puerto de carga tuvo que trasladarse (p. 147).</p>
+</div>
+</div>
+
+<div class="bloque">
+<div class="texto"><h3 class="sub">Los otros pueblos del río</h3></div>
+<div class="pueblos">
+<div class="pueblo"><div class="sinfoto">Cabuyaro</div><div class="t"><h4>Cabuyaro</h4><p>El antiguo Puerto Barrigón era el puerto de verano: cuando bajaba el agua, la carga llegaba hasta aquí y seguía en embarcaciones más pequeñas (Ardila Luna, 2018, p. 31). En 1964 tenía 2.695 habitantes, el 90% en el campo (Censo de Población de 1964).</p></div></div>
+<div class="pueblo"><img src="img/orocue-1921.jpg" alt="Casa de la Playa en Orocué, 1921"><div class="t"><h4>Orocué</h4><p>Fue una de las paradas de Abel y uno de los puertos históricos del Meta. Su población llegó a depender del comercio por el río para abastecerse, y en los años setenta el pueblo vivió una crisis que generó una migración masiva dejándolo casi vacío (Ardila Luna, 2018, p. 204).</p><p style="font-size:11px;color:#56635D">Foto: Casa de la Playa en Orocué, 1921. Fondo FAFO (Ardila Luna, 2018, p. 197, Imagen 30).</p></div></div>
+<div class="pueblo"><div class="sinfoto">Puerto Carreño</div><div class="t"><h4>Puerto Carreño</h4><p>Aquí el Meta desemboca en el Orinoco y empieza Venezuela, donde a veces llegaba Abel. Desde la Colonia hubo un contrabando activo entre el Orinoco y el Meta (Ardila Luna, 2018, p. 51), y a mediados de siglo el pueblo solo tenía conexión por carretera con Villavicencio en verano (Esquivel Triana, 2002, p. 60).</p></div></div>
+</div>
+</div>
+<div class="siguiente"><button data-ir="caminos">← Parte III</button><button class="prim" data-ir="navegacion">Parte V · Dos circuitos →</button></div>
+</section>
+
+<!-- ============================== V. NAVEGACIÓN ============================== -->
+<section class="panel" id="navegacion">
+<div class="portico">
+<img src="img/barco-rio-meta.jpg" alt="Barco de dos pisos con cabina de mando en el río Meta">
+<div class="rotulo"><span class="num">Parte V</span><h2>La navegación: dos circuitos sobre el mismo río</h2><p>El comercio del Estado y el de navegantes como Abel.</p></div>
+<span class="credito">Embarcación en el río Meta. Foto: Camilo Rey.</span>
+</div>
+
+<div class="bloque">
+<div class="texto">
+<p>Entre 1940 y 1980 convivían en el Meta tres formas de comercio. La primera era la del Estado: NAVENAL, con sus convoyes, tarifas subsidiadas y convenio con el IDEMA (Ardila Luna, 2018, pp. 109, 155). La segunda, la de las empresas fluviales de colonos y llaneros, que desde los cincuenta llevaban ganado, yuca y plátano hacia Bogotá y traían maquinaria, sal y víveres (p. 109). La tercera, la de navegantes independientes como Abel, que trabajaban por encargo y llegaban donde no llegaban ni las empresas ni el Estado.</p>
+</div>
+
+<div class="tabla">
+<h4>Tres circuitos sobre el mismo río, 1940–1980</h4>
+<div class="tabla-scroll"><table>
+<thead><tr><th></th><th>NAVENAL (Estado)</th><th>Empresas llaneras</th><th>Abel Rey (informal)</th></tr></thead>
+<tbody>
+<tr><th class="fila">Operador</th><td>Empresa estatal, creada en 1944; en el Meta desde 1948</td><td>Colonos y llaneros, desde los años 50</td><td>Navegante independiente con base en Puerto López</td></tr>
+<tr><th class="fila">Embarcaciones</th><td>Un buque y 7 convoyes (botes de 80 a 300 t)</td><td>Chalanas, convoyes, ferris</td><td>Un bote propio</td></tr>
+<tr><th class="fila">Carga</th><td>Ganado, sal e insumos; pasajeros</td><td>Ganado, yuca y plátano hacia Bogotá; maquinaria, sal y víveres hacia el Llano</td><td>Arroz, granos, ropa, medicina, encargos; vestidos de novia y ataúdes</td></tr>
+<tr><th class="fila">Clientes</th><td>Grandes haciendas; convenio con el IDEMA</td><td>Ganaderos y comerciantes</td><td>Caseríos, resguardos indígenas, haciendas pequeñas y remotas</td></tr>
+<tr><th class="fila">Cómo se pedía</th><td>Contratos y tarifas subsidiadas</td><td>Contratos con ganaderos</td><td>Voz a voz; encargos anotados en Villavicencio</td></tr>
+<tr><th class="fila">Recorrido</th><td>Puerto López – Puerto Carreño</td><td>Bogotá – Villavicencio – Puerto López – Puerto Carreño</td><td>Puerto López hasta Orocué, La Hermosa, Guachiría, Cravo Norte, Cravo Sur y a veces Venezuela</td></tr>
+<tr><th class="fila">Fin</th><td>Liquidada en 1984</td><td>Continúan hasta hoy</td><td>Se retira en 1986</td></tr>
+</tbody></table></div>
+<p class="pie">Fuente: Tabla de elaboración propia con base en Ardila Luna (2018, pp. 31–32, 109, 142–144, 155) y Flor Alba Garzón (comunicaciones personales, 20 de septiembre y 4 de noviembre de 2026).</p>
+</div>
+
+<div class="texto">
+<p>La sal muestra cómo funcionaba el circuito formal. En 1931, para financiarse durante la crisis, el gobierno entregó al Banco de la República la administración de las salinas (Ocampo, 2023, p. 18). En el Llano, los hatos pagaban la sal a un precio alto, en parte por los costos del transporte que el Banco contrataba con particulares (Esquivel Triana, 2002, p. 65). Por eso uno de los convenios más importantes de NAVENAL fue llevar sal para los ganaderos con el IDEMA (Ardila Luna, 2018, p. 109).</p>
+<p>El negocio de Abel era distinto, pues seguía el calendario del río y su demanda dependía de los pedidos de la temporada anterior. A fin de año, en pleno verano, compraba mercancía al por mayor en Villavicencio y anotaba los encargos de comerciantes y dueños de caseríos y haciendas. En febrero zarpaba de Puerto López para un viaje de unos seis meses con las aguas altas, entregando pedidos en caseríos, resguardos indígenas y haciendas hasta el Cravo Norte, y a veces hasta Venezuela (Flor Alba Garzón, comunicación personal, 20 de septiembre de 2026). Su negocio se sostenía en la confianza y el voz a voz. Llevaba siempre de sobra un ataúd y un vestido de novia, porque “sabía que alguien de por allá lejos iba a necesitar uno” (Flor Alba Garzón, 2026). Su lógica era distinta a la del dueño de hato, que bajaba una o dos veces al año con mercancías y las vendía al vecindario “con precios a su acomodo” (Esquivel Triana, 2002, p. 69), pues Abel llevaba lo que le pedían.</p>
+</div>
+
+<blockquote class="destacada">“Sabía que alguien de por allá lejos iba a necesitar uno.”<footer>Flor Alba Garzón, sobre el ataúd y el vestido de novia que Abel llevaba siempre en el bote (comunicación personal, 20 de septiembre de 2026).</footer></blockquote>
+
+
+</div>
+
+<div class="bloque">
+<div class="texto"><h3 class="sub">Dos escalas: el bote y el convoy</h3></div>
+<div class="par">
+<figure><img src="img/embarcaciones-1.jpg" alt="Infografía de canoa y chalana o bongo"><figcaption>Canoa y chalana o bongo.</figcaption></figure>
+<figure><img src="img/embarcaciones-2.jpg" alt="Infografía de botemotor y convoy"><figcaption>Botemotor y convoy.</figcaption></figure>
+</div>
+<div class="envoltura"><p style="font-size:12px;color:#56635D;max-width:1032px;margin:-14px auto 24px">«Embarcaciones de carga en río Meta». Diseño: Miguel Ángel Acosta Sandino; medidas tomadas de SENA (2007) y de entrevistas a empresarios fluviales. En Ardila Luna (2018, pp. 33–34).</p></div>
+<div class="texto">
+<p>Los dos circuitos funcionaban a escalas muy distintas. NAVENAL armó sus convoyes con botes de 80, 150 y 300 toneladas (Ardila Luna, 2018, p. 142). El bote de Abel cargaba lo que cabía en una embarcación familiar, pero podía entrar por caños y afluentes y detenerse en cada caserío. La escala le daba al Estado volumen, pero los botes pequeños como los de Abel podían adentrarse a lugares recónditos en el camino del Río. Es por esto, que la entrada de la NAVENAL no implicó un desplazamiento necesario de los botes informales, sino un complemento a estos.</p>
+</div>
+<figure class="fig-chica">
+<img src="img/vapor-uribante.jpg" alt="Vapores del río Meta">
+<figcaption>Vapores del Meta (Ardila Luna, 2018, p. 107, Imagen 18).</figcaption>
+</figure>
+</div>
+<div class="siguiente"><button data-ir="pueblos">← Parte IV</button><button class="prim" data-ir="conclusion">Conclusiones →</button></div>
+</section>
+
+<!-- ============================== CONCLUSIÓN ============================== -->
+<section class="panel" id="conclusion">
+<div class="portico">
+<img src="img/camilo-rey-rio-meta.jpg" alt="Lancha con bandera de Colombia navegando el río Meta">
+<div class="rotulo"><span class="num">Cierre</span><h2>Conclusiones</h2></div>
+<span class="credito">El río Meta. Foto: Camilo Rey.</span>
+</div>
+<div class="bloque">
+<div class="texto">
+<p>Para mediados del Siglo XX los Llanos habían quedado por fuera de la integración del país: la nación había crecido alrededor del café, de las ciudades andinas y de las vías hacia los puertos de exportación. Los Llanos siguieron siendo una frontera ganadera, aislada por la geografía y casi sin carreteras: en 1960 el Meta tenía el 0,8% de los vehículos del país. Aquel vacío lo suplió el río, la única vía que interconectaba las regiones dispersas en los llanos y por la cual en algún punto llegaron a circular dos comercios. NAVENAL, el circuito del Estado, llevaba la sal y los insumos que necesitaba la ganadería. Navegantes como Abel, el circuito informal, llevaban lo que necesitaban los caseríos y comunidades alejadas, por voz a voz.</p>
+<p>La historia del río resume en una región varios de los temas del curso. La fragmentación geográfica que describen Safford y Palacios (2002) seguía viva en el siglo XX. La ruptura del reparto del poder que estudian Mazzuca y Robinson (2006) empujó a los liberales hacia el Llano y convirtió el río en escenario de guerra en distintos momentos. El Estado que intervino en la economía después de 1930 (Ocampo, 2023) y que llegó al río con NAVENAL, con las salinas del Banco de la República y con los créditos a la ganadería, para luego retirarse en 1984. Y, finalmente, cuando a finales de los sesenta y en los setenta la carretera conectó por fin a Puerto López durante todo el año, con el puente Carlos Lleras (1968) y la ampliación financiada por el BID, donde el navegante que llevaba de todo fue empezando a ser dispensable.</p>
+<p>La vida de Abel, mi abuelo, cubre casi exactamente ese ciclo. Empezó a navegar cuando el Estado volvía a mirar el río. Vio cómo la carretera le acortaba los viajes y cambiaba lo que le pedían. Se retiró en 1986, dos años después de que desapareciera NAVENAL, por la violencia y por la muerte de su hija Nidia. Para la gente de Puerto López, el tiempo en que “se podía vivir del río” terminó a finales de los ochenta (Ardila Luna, 2018, p. 137). La historia de Abel muestra el desarrollo del río que mantuvo unido al llano desde antes de la presencia real del Estado y deja ver cómo se sostuvo una región lejana a la integración del país pero conectada por su propia gente y sus aguas.</p>
+</div>
+<figure class="fig-media">
+<img src="img/familia-tres.jpg" alt="Fotografía antigua de Abel Rey con camisa blanca junto a dos de sus hijos">
+<figcaption>Abel Rey con dos de sus hijos, Lilia y Wilson. Archivo familiar.</figcaption>
+</figure>
+</div>
+<div class="siguiente"><button data-ir="navegacion">← Parte V</button><button class="prim" data-ir="fuentes">Fuentes y datos →</button></div>
+</section>
+
+<!-- ============================== FUENTES ============================== -->
+<section class="panel" id="fuentes">
+<div class="portico liso">
+<div class="rotulo"><span class="num">Anexo</span><h2>Fuentes y datos</h2><p>De dónde viene la información y cómo se trabajó.</p></div>
+</div>
+<div class="bloque">
+<div class="texto">
+<h3 class="sub">Fuentes familiares</h3>
+<p>Mi abuelo falleció en 2022, así que su experiencia se reconstruye de forma indirecta. La fuente principal son dos entrevistas a Flor Alba Garzón, su esposa (20 de septiembre y 4 de noviembre de 2026), complementadas con fotografías del archivo familiar y fotografías actuales del río tomadas por mi primo, Camilo Rey. Los testimonios orales tienen límites claros para fechar y ubicar los hechos, por eso los uso sobre todo para describir las dinámicas del comercio, las temporadas de viaje, los clientes y las mercancías, y los contrasto con la literatura y los datos.</p>
+<h3 class="sub" style="margin-top:36px">Datos</h3>
+</div>
+<div class="tabla" style="max-width:1040px">
+<div class="tabla-scroll"><table>
+<thead><tr><th>Serie</th><th>Origen</th><th>Variables</th><th>Cobertura</th><th>Tratamiento</th></tr></thead>
+<tbody>
+<tr><td>Población del Meta y municipios</td><td>Censos de Población 1938 (Tomo XVI), 1951 y 1964 (Resumen del Meta), Contraloría y DANE; Censo de 1985, población con ajuste final de cobertura (DANE)</td><td>Población total, cabecera y resto; sexo; grupos de edad (1964)</td><td>Intendencia/Departamento del Meta y sus municipios</td><td>Transcripción propia de los cuadros escaneados; verificación de que los municipios sumen el total departamental; tasas de crecimiento geométrico entre fechas censales. La cifra de 1985 incluye el ajuste de cobertura del DANE; para comparar Puerto López con 1964 se suma Puerto Gaitán, que formaba parte de su territorio</td></tr>
+<tr><td>Carreteras nacionales</td><td>Alvear Sanín (2008), Tabla 35 (Barnhart)</td><td>Kilómetros</td><td>Nacional, 1932–1948, cada 4 años</td><td>Transcripción</td></tr>
+<tr><td>Carga por modo</td><td>Alvear Sanín (2008), Tabla 38 (misión Currie)</td><td>Ton-km y porcentaje</td><td>Nacional, 1947</td><td>Transcripción</td></tr>
+<tr><td>Parque automotor</td><td>Alvear Sanín (2008), Tabla 40 (Anuario General de Estadística)</td><td>Vehículos</td><td>Departamentos, 1960</td><td>Transcripción</td></tr>
+<tr><td>Tiempos de viaje</td><td>Esquivel Triana (2002); entrevista familiar</td><td>Trayecto, medio, duración, año</td><td>Llanos Orientales, 1930–1980</td><td>Compilación propia de datos dispersos en el texto</td></tr>
+<tr><td>Puerto López en cifras</td><td>Esquivel Triana (2002); Ardila Luna (2018); Censo de 1964</td><td>Habitantes, casas, producción, estatus</td><td>Puerto López, 1938–1964</td><td>Compilación propia</td></tr>
+<tr><td>Crecimiento y términos de intercambio</td><td>Ocampo (2023), gráficos 1.1A y 1.2A</td><td>PIB (%), términos de intercambio (1970 = 100)</td><td>Colombia, 1880–2022</td><td>Reproducción de la fuente</td></tr>
+<tr><td>Mapa</td><td>Ardila Luna (2018), Mapa No. 2; entrevista familiar</td><td>Ríos, puertos, carreteras y paradas</td><td>Cuenca del Meta</td><td>Capa interactiva de elaboración propia sobre el mapa base</td></tr>
+</tbody></table></div>
+<p class="pie">Los gráficos de elaboración propia están hechos en Stata a partir de los archivos de la carpeta <code>datos/</code> del sitio.</p>
+</div>
+<div class="texto">
+<h3 class="sub" style="margin-top:36px">Uso de inteligencia artificial</h3>
+<p>La inteligencia artificial (Claude) fue utilizada para transcribir datos a tablas, programar el sitio, el mapa y pulir el código de los gráficos y redacción. La investigación, las entrevistas, la selección de fuentes y los argumentos son trabajo propio.</p>
+<h3 class="sub" style="margin-top:36px">Bibliografía</h3>
+<div class="biblio">
+<p>Alcaldía de Puerto López. (2025). <i>Pasado, presente y futuro</i>. https://www.puertolopez-meta.gov.co/publicaciones/2275/pasado-presente-y-futuro/</p>
+<p>Alvear Sanín, J. (2008). <i>Historia del transporte y la infraestructura en Colombia (1492–2007)</i>. Ministerio de Transporte.</p>
+<p>Ardila Luna, D. C. (2018). <i>«El proyecto lo trajeron hecho». El proyecto de navegabilidad del río Meta en la vida con el río</i> [Tesis doctoral, Universidad de los Andes].</p>
+<p>Ardila-Luna, D. C. (2022). El río Meta en el proceso de fronterización de la frontera colombiana, 1532–2016. <i>Agua y Territorio</i>, (19), 67–80.</p>
+<p>Caballero Argáez, C. y Esguerra Umaña, P. (2023). Cien años de regímenes cambiarios en Colombia: 1923-2023. En <i>Ensayos de historia económica. Cien años del Banco de la República</i> (cap. 2). Banco de la República.</p>
+<p>Caballero Argáez, C. y Urrutia Montoya, M. (2005). <i>Las crisis financieras del siglo XX</i>. Fedesarrollo.</p>
+<p>Contraloría General de la República. (1942). <i>Censo General de Población, 5 de julio de 1938. Tomo XVI: Resumen general del país</i>. Imprenta Nacional.</p>
+<p>DANE. (1954). <i>Censo de Población, 9 de mayo de 1951</i>.</p>
+<p>DANE. (s. f.). <i>Colombia. Censo Nacional de 1985: cuadros de población total con ajuste final de cobertura, por secciones del país y municipios</i>. Banco Nacional de Datos.</p>
+<p>DANE. (1970). <i>XIII Censo Nacional de Población y II de Edificios y Viviendas, 15 de julio de 1964. Resumen del Meta</i>. Imprenta Nacional.</p>
+<p>Esquivel Triana, R. (2002). Colonización y violencia en los Llanos, 1949-1953. <i>Memoria y Sociedad, 6</i>(11), 57–84.</p>
+<p>Jara Moreno, D. J. (2007). Administración territorial y representación política: antecedentes de la violencia en la Intendencia Nacional del Meta, 1930-1949. <i>Memoria &amp; Sociedad, 11</i>(22), 37–50.</p>
+<p>Mazzuca, S. y Robinson, J. A. (2006). <i>Political conflict and power-sharing in the origins of modern Colombia</i> (NBER Working Paper No. 12099).</p>
+<p>Ocampo, J. A. (2023). Una historia de las crisis económicas de Colombia. En <i>Ensayos de historia económica. Cien años del Banco de la República</i> (cap. 1). Banco de la República.</p>
+<p>Ospina Ovalle, C. A. (2021). <i>Incendio en la llanura: surgimiento, auge y entrega de las guerrillas en los Llanos Orientales 1949–1953</i>. Escuela Superior de Guerra; Planeta.</p>
+<p>Safford, F. y Palacios, M. (2002). <i>Colombia: Fragmented land, divided society</i>. Oxford University Press.</p>
+<p>Flor Alba Garzón, comunicaciones personales, 20 de septiembre y 4 de noviembre de 2026.</p>
+</div>
+</div>
+</div>
+<div class="siguiente"><button data-ir="conclusion">← Conclusiones</button><button class="prim" data-ir="inicio">Volver al inicio ↑</button></div>
+</section>
+
+</main>
+
+<script>
+(function(){
+  /* navegación por apartados */
+  var paneles = document.querySelectorAll('.panel');
+  var botones = document.querySelectorAll('.barra .ir');
+  function abrir(id, empujar){
+    var p = document.getElementById(id) || document.getElementById('inicio');
+    paneles.forEach(function(x){ x.classList.remove('activo'); });
+    p.classList.add('activo');
+    botones.forEach(function(b){ b.classList.toggle('activo', b.getAttribute('data-ir') === p.id); });
+    if (empujar) { try { history.pushState(null, '', '#' + p.id); } catch(e){} }
+    window.scrollTo(0, 0);
+  }
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-ir]');
+    if (b){ e.preventDefault(); abrir(b.getAttribute('data-ir'), true); }
+  });
+  window.addEventListener('popstate', function(){ abrir(location.hash.slice(1) || 'inicio', false); });
+  abrir(location.hash.slice(1) || 'inicio', false);
+
+  /* mapa interactivo */
+  var nombre = document.getElementById('mapa-nombre');
+  var nota = document.getElementById('mapa-nota');
+  var pts = document.querySelectorAll('.hs');
+  function show(b){
+    pts.forEach(function(p){ p.classList.remove('on'); });
+    b.classList.add('on');
+    nombre.textContent = b.getAttribute('data-name');
+    nota.textContent = b.getAttribute('data-note');
+  }
+  pts.forEach(function(b){
+    b.addEventListener('click', function(){ show(b); });
+    b.addEventListener('mouseenter', function(){ show(b); });
+    b.addEventListener('focus', function(){ show(b); });
+  });
+  var base = document.querySelector('.hs-base'); if (base) base.classList.add('on');
+})();
+</script>
+</body>
+</html>
